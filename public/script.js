@@ -112,8 +112,8 @@ function addChart(title, data, color) {
   const options = {
     'vega': {
       "$schema": "https://vega.github.io/schema/vega/v5.json",
-      "width": 600,
-      "height": 600,
+      "width": 500,
+      "height": 500,
       "autosize": "none",
       "signals": [
         { "name": "radius", "update": "180" }
