@@ -1,0 +1,35 @@
+#dataChart {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin-top: 0.5rem;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+#VitalityTitle {
+    color: #3fbace;
+}
+
+#AttractionTitle {
+    color: #e3006d;
+}
+
+#BasicsTitle {
+    color: #78b142;
+}
+
+#SelfdevelopmentTitle {
+    color: #f9a61a;
+}
+
+#AmbitionTitle {
+    color: #a74d96;
+}
+
+.optionWrapper {
+    padding: 0.5rem;
+    border: black 1px solid;
+}
