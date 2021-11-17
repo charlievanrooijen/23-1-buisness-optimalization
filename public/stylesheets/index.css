@@ -33,3 +33,13 @@
     padding: 0.5rem;
     border: black 1px solid;
 }
+
+.home-link {
+    color: white !important;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    color: gray;
+}
