@@ -45,7 +45,7 @@ var AmbitionArray = [
     'Dominance',
 ]
 
-function loadAnswer(vitalityScoreFinal, attractionScoreFinal, basicsScoreFinal, selfdevelopmentScoreFinal, ambitionScoreFinal) {
+function loadAnswer(vitalityScoreFinal, attractionScoreFinal, basicsScoreFinal, selfdevelopmentScoreFinal, ambitionScoreFinal, individual_scores) {
 
     var resultArray = [
         vitalityScoreFinal,
@@ -76,15 +76,29 @@ function loadAnswer(vitalityScoreFinal, attractionScoreFinal, basicsScoreFinal, 
     });
 
     buisness_stats = Final;
-    console.log(Final);
 
-    var table = '';
+    var category_table = '';
 
     buisness_stats.forEach(function(element) {
-        table += '<tr><td>' + element[0] + '</td><td>' + Math.round(element[1] * 100) / 100 + '</td></tr>'
+        category_table += '<tr><td>' + element[0] + '</td><td>' + Math.round(element[1] * 100) + '%</td></tr>'
     });
 
-    document.getElementById('category-results').innerHTML = table;
+    document.getElementById('category-results').innerHTML = category_table;
+
+
+    var individual_table = '';
+
+    for (var i = 0; i < individual_scores[1].length; i++) {
+        if (individual_scores[1][i]) {
+            individual_table += '<tr><td>' + individual_scores[0][i] + '</td><td>yes</td></tr>';
+        } else {
+            individual_table += '<tr><td>' + individual_scores[0][i] + '</td><td>no</td></tr>';
+        }
+    }
+
+    console.log(individual_scores);
+
+    document.getElementById('individual-results').innerHTML = individual_table;
 
     loadCharts();
 }

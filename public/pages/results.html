@@ -17,21 +17,34 @@
 <body style="max-width: 100vw; max-height: 100vh;" onload="getResults()">
     <script src="../scripts/script.js"></script>
     <div class="row m-0 h-100">
-        <div class="col-6 p     -5 bg-secondary  ">
+        <div class="col-lg-6 col-sm-12 p-5 bg-secondary  ">
             <div id="chart-area">
 
             </div>
         </div>
-        <div class="col-6 p-0">
-            <div class="w-100 h-100" id="table-area">
-                <table>
-                    <tr>
-                        <th>Company</th>
-                        <th>Contact</th>
-                    </tr>
-                    <tbody id="category-results">
-                    </tbody>
-                </table>
+        <div class="col-sm-12 col-lg-6 p-0">
+            <div class="row w-100 h-100" id="table-area">
+                <div class="col-6">
+                    <table id="category-table" class="m-0">
+                        <tr>
+                            <th>Category</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tbody id="category-results">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6">
+
+                    <table id="individual-table">
+                        <tr>
+                            <th>Category</th>
+                            <th>Awnser</th>
+                        </tr>
+                        <tbody id="individual-results">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
