@@ -1,79 +1,42 @@
 <html>
 
 <head>
-    <title>Carmen is amazing</title>
-    <script src="../scripts/script.js"></script>
-    <link rel="stylesheet" href="../stylesheets/index.css">
     <!-- dependecies -->
     <script src='https://www.gstatic.com/charts/loader.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="../stylesheets/index.css">
+
+    <title>Carmen is amazing</title>
+    <!-- costum links -->
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/results.css">
+    <script src="../scripts/gameController.js"></script>
+    <script src="../scripts/script.js"></script>
 </head>
 
-<body style="width: 100vw; height: 100vh;">
+<body style="max-width: 100vw; max-height: 100vh;" onload="getResults()">
+    <script src="../scripts/script.js"></script>
     <div class="row m-0 h-100">
-        <div class="col-8 h-100">
-            <div class="w-100 h-100" id="chart-area">
+        <div class="col-6 p     -5 bg-secondary  ">
+            <div id="chart-area">
 
             </div>
         </div>
-        <div class="col-4 m-0">
-            <div class="text-center">
-                <h2 class="">Settings</h2>
-                <p>some settings to make your life ez</p>
-            </div>
-            <div class="row">
-                <div class="col-6 ">
-                    <h3 id="VitalityTitle" class="rounded title">Vitality</h3>
-                    <div class="optionWrapper" id="Vitality">
-                        <p><input onchange="getScores('Vitality')" type="checkbox" id="Fit"> Fit</p>
-                        <p><input onchange="getScores('Vitality')" type="checkbox" id="Health"> Health</p>
-                    </div>
-                    <h3 id="AttractionTitle" class="rounded title">Attraction</h3>
-                    <div class="optionWrapper" id="Attraction">
-                        <p><input onchange="getScores('Attraction')" type="checkbox" id="Aesthetics"> Aesthetics</p>
-                        <p><input onchange="getScores('Attraction')" type="checkbox" id="Sexuality"> Sexuality</p>
-                    </div>
-                </div>
-                <div class="col-6 ">
-                    <h3 id="BasicsTitle" class="rounded title">Basics</h3>
-                    <div class="optionWrapper" id="Basics">
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Idealism"> Idealism</p>
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Loyal"> Loyal</p>
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Connected"> Connected</p>
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Caring"> Caring</p>
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Certainty"> Certainty</p>
-                        <p><input onchange="getScores('Basics')" type="checkbox" id="Safety"> Safety</p>
-                    </div>
-                </div>
-                <div class="col-6 ">
-                    <h3 id="SelfdevelopmentTitle" class="rounded title">Selfdevelopment</h3>
-                    <div class="optionWrapper" id="Selfdevelopment">
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Relaxation"> Relaxation</p>
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Play"> Play</p>
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Freedom"> Freedom</p>
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Creativity"> Creativity</p>
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Individuality">Individuality</p>
-                        <p><input onchange="getScores('Selfdevelopment')" type="checkbox" id="Curiosity"> Curiosity</p>
-                    </div>
-                </div>
-                <div class="col-6 ">
-                    <h3 id="AmbitionTitle" class="rounded title">Ambition</h3>
-                    <div class="optionWrapper" id="Ambition">
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Capable"> Capable</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Innovation"> Innovation</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Winning"> Winning</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Pride"> Pride</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Recognition"> Recognition</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Status"> Status</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Possession"> Possession</p>
-                        <p><input onchange="getScores('Ambition')" type="checkbox" id="Dominance"> Dominance</p>
-                    </div>
-                </div>
+        <div class="col-6 p-0">
+            <div class="w-100 h-100" id="table-area">
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tbody id="category-results">
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </body>
+
+</html>
 
 </html>

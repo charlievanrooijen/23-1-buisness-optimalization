@@ -6,25 +6,19 @@
     <link rel="stylesheet" href="../stylesheets/game.css">
     <script src="../scripts/gameController.js"></script>
     <!-- dependecies -->
-    <script src='https://www.gstatic.com/charts/loader.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body style="width: 100vw; height: 100vh;" onload="showCard()">
-    <div class="row m-0 h-100">
-        <div class="col-3 h-100 bg-dark">
-
-
-        </div>
-        <div class="col-6 h-100 bg-secondary">
-
+<body class=" bg-dark" style="max-width: 100vw;" onload="showCard()">
+    <div class="row m-0 mb-5 p-3">
+        <div class="col-lg-6 col-sm-12 px-sm-5 py-sm-4 mx-lg-auto h-100 bg-secondary">
             <div class="textWrapper p-3">
-                <h2 class="text-dark text-center"><b id="counter">1</b> out of <b>23+1</b></h2>
-                <h1 class="text-warning text-center"> Does this fit the company in question?</h1>
+                <h2 class="text-dark text-center m-0"><b id="counter">1</b> out of <b>23+1</b></h2>
+                <h1 class="text-light text-center m-0"> Does this fit the company in question?</h1>
             </div>
 
-            <div class="cardWrapper Attractioncolor rounded">
+            <div class="cardWrapper rounded">
                 <div class="imageWrapper p-3">
                     <img id="cardImage" class="w-100 rounded" src="../Cards/1.jpg">
                 </div>
@@ -34,11 +28,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-3 h-100 bg-dark">
-
-
-        </div>
     </div>
+    <footer>
+        <div class="row m-0">
+            <div class="col-12 p-3 m-0">
+                <p class="text-center text-light"><a href="home.html" class="btn btn-secondary">click here to stop the game</a></p>
+                <p class="text-center text-light">Note: this will discard made progress</p>
+            </div>
+    </footer>
 </body>
 
 </html>
