@@ -8,19 +8,22 @@
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
-td,
-th {
+th{
+    border: 1px solid #fa0;
+    background-color: #fa0;
+    text-align: left;
+    padding: 8px;
+}
+
+td{
     border: 1px solid #fa0;
     text-align: left;
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #fa0;
-}
 
 @media (min-width: 992px) {
     .chartContainer {

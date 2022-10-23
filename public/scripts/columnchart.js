@@ -8,7 +8,7 @@ function addColumnChart(title, data, color) {
     dataTable.addRows(data);
 
     var data = google.visualization.arrayToDataTable([
-        ['data', 'wgaasdhyb', { role: 'style' }],
+        ['data', '', { role: 'style' }],
         [data[0][0] + "%", (data[0][1] * 100), '3fbace'],
         [data[1][0] + "%", (data[1][1] * 100), 'e3006d'],
         [data[2][0] + "%", (data[2][1] * 100), '78b142'],

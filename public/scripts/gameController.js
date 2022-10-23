@@ -13,8 +13,8 @@ function setCardImage(number) {
 }
 
 function showCard() {
-    if (imageArray.length < 23) {
-        for (var i = 0; i != 23; i++) {
+    if (imageArray.length < 24) {
+        for (var i = 0; i < 24; i++) {
             imageArray[i] = JSON.stringify(i + 1) + '.jpg'
         }
     }
@@ -30,7 +30,7 @@ function showCard() {
 
 
 function NextCard(questionResult) {
-    if (ResultArray.numbers_used.length < 23) {
+    if (ResultArray.numbers_used.length < 24) {
         showCard();
         ResultArray.numbers_result.push(questionResult);
         document.getElementById('counter').innerHTML = ResultArray.numbers_result.length + 1;
@@ -107,5 +107,5 @@ var cardCaptionArray = [
     'Recognition',
     'Status',
     'Possession',
-    'Dominance',
+    'Dominance'
 ]
